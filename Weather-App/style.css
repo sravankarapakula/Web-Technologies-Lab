@@ -1,0 +1,53 @@
+body{
+    background: rgb(177, 242, 152);
+    padding : 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    padding-top: 100px;
+    margin-top: 5pt;
+}
+.container{
+    text-align: center;
+    background: rgb(42, 38, 38);
+    box-shadow: 0 0 20px rgb(100, 95, 100);
+    width :69%;
+    margin :auto;
+    padding-top: 5px;
+    border-radius: 7px;
+}
+.search input{
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 7px;
+}
+.search button{
+    font-size: 16px;
+    color: azure;
+    padding: 20px;
+    background-color: rgb(46, 182, 228);
+    margin:10px;
+    
+    cursor: pointer;
+    border-radius: 9px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.search button:hover{
+    box-shadow: 0 0 10px rgb(162, 177, 165);
+    transform: scale(1.1);
+}
+
+.Weather-Report{
+    padding-bottom: 5px;
+    border: 2px dashed white;
+    width: 40%;
+    margin-left: 300px;
+    border-radius: 20px;
+}
