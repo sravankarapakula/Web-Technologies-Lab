@@ -14,3 +14,5 @@ A responsive and clean sign-up form template built entirely with modern HTML5 an
 
 -   **HTML5**: For the semantic structure of the form.
 -   **CSS3**: For all styling, including Flexbox for the layout and transitions for visual effects.
+-   **JavaScript**: For verifying the data entered.
+
