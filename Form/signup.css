@@ -1,0 +1,102 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5; /* A light grey background */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            /* width: fit-content; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Form Container */
+        .container {
+            max-width: 600px;
+            margin: 20px auto; /* Centers the form on the page */
+            padding: 25px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-decoration: underline;
+            color: #1d2129;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4b4f56;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 25px;
+        }
+        
+        /* Remove default margin from paragraphs to control spacing better */
+        p {
+            margin: 15px 0;
+        }
+
+        /* Input Fields and Textarea Styling */
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Important for width and padding */
+            font-size: 16px;
+        }
+
+        /* Fieldset and Legend for Gender Selection */
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #333;
+            padding: 0 10px;
+        }
+        
+        /* Radio button labels */
+        fieldset p {
+            text-align: center;
+        }
+
+        /* Submit Button Styling */
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #28a745; /* A nice green color */
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for the button */
+        input[type="submit"]:hover {
+            background-color: #218838; /* A darker green on hover */
+        }
