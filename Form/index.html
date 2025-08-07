@@ -7,33 +7,68 @@
     <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    <header style="text-align: center;">
-        <h1>SIGN UP </h1>
-    </header>
-    <form action="" style="text-align: center;">
-        <p>Fields with * are required.</p>
-        <h2>PERSONAL INFORMATION</h2>
-        <P>
-            FIRST NAME : *<input type="text" name="name" required >
-            LAST NAME(Optional) : <input type="text" name="name">
-        </P>
-        <fieldset >
-            <legend>Gender *</legend >
-            <p >
-                MALE <input type="radio" name="gender" id="male">
-                FEMALE <input type="radio" name="gender" id="female">
-                RATHER NOT SAY <input type="radio" name="gender" id="rather not say">
+    <div class="container">
+        <header>
+            <h1>SIGN UP</h1>
+        </header>
+
+        <form id="signupForm" novalidate>
+            <p style="text-align: center; font-size: 14px; color: #606770;">Fields with * are required.</p>
+
+            <h2>PERSONAL INFORMATION</h2>
+            <p>
+                FIRST NAME: *
+                <input type="text" id="firstName" name="firstName" required>
+                <span class="error"></span>
             </p>
-        </fieldset>
-        <p>Date of birth (7 & above) *<input type="date" name="DOB" id="DOB" required></p>
-        <p>Address :* <textarea name="address" id="address" cols="70" rows="5" required></textarea> </p>
-        <p>Pincode :* <input type="number" name="pincode" id="pincode" required></p>
-        <br>
-        <h2>LOGIN CREDENTIALS</h2>
-        <P>LOGIN ID *<input type="email" name="login id" id="login id" required></P>
-        <p>Password(*minimum 6 digits) *<input type="password" name="password" id="password" required> </p>
-        <p>Re-Enter Password(*minimum 6 digits) *<input type="password" name="password" id="password" required> </p>
-        <input type="submit" value="SIGN UP">
-    </form>
+            <p>
+                LAST NAME (Optional):
+                <input type="text" id="lastName" name="lastName">
+                <span class="error"></span>
+            </p>
+
+            <fieldset>
+                <legend>Gender *</legend>
+                <p>
+                    <input type="radio" name="gender" value="male" required> MALE
+                    &nbsp;&nbsp;
+                    <input type="radio" name="gender" value="female" required> FEMALE
+                    &nbsp;&nbsp;
+                    <input type="radio" name="gender" value="rns" required> RATHER NOT SAY
+                </p>
+                <span class="error-gender error"></span>
+            </fieldset>
+
+            <p>Date of birth (7 & above) *
+                <input type="date" id="dob" name="dob" required>
+                <span class="error"></span>
+            </p>
+            <p>Address: *
+                <textarea id="address" name="address" rows="4" required></textarea>
+                <span class="error"></span>
+            </p>
+            <p>Pincode: *
+                <input type="number" id="pincode" name="pincode" required>
+                <span class="error"></span>
+            </p>
+
+            <h2>LOGIN CREDENTIALS</h2>
+            <p>LOGIN ID / EMAIL: *
+                <input type="email" id="email" name="email" required>
+                <span class="error"></span>
+            </p>
+            <p>Password (minimum 6 characters): *
+                <input type="password" id="password" name="password" minlength="6" required>
+                <span class="error"></span>
+            </p>
+            <p>Re-Enter Password: *
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <span class="error"></span>
+            </p>
+
+            <input type="submit" value="SIGN UP">
+        </form>
+    </div>
+    <script src="signup.js"></script>
 </body>
 </html>
