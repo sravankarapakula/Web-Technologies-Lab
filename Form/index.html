@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRAVAN | SIGN UP</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1>SIGN UP </h1>
+    </header>
+    <form action="" style="text-align: center;">
+        <p>Fields with * are required.</p>
+        <h2>PERSONAL INFORMATION</h2>
+        <P>
+            FIRST NAME : *<input type="text" name="name" required >
+            LAST NAME(Optional) : <input type="text" name="name">
+        </P>
+        <fieldset >
+            <legend>Gender *</legend >
+            <p >
+                MALE <input type="radio" name="gender" id="male">
+                FEMALE <input type="radio" name="gender" id="female">
+                RATHER NOT SAY <input type="radio" name="gender" id="rather not say">
+            </p>
+        </fieldset>
+        <p>Date of birth (7 & above) *<input type="date" name="DOB" id="DOB" required></p>
+        <p>Address :* <textarea name="address" id="address" cols="70" rows="5" required></textarea> </p>
+        <p>Pincode :* <input type="number" name="pincode" id="pincode" required></p>
+        <br>
+        <h2>LOGIN CREDENTIALS</h2>
+        <P>LOGIN ID *<input type="email" name="login id" id="login id" required></P>
+        <p>Password(*minimum 6 digits) *<input type="password" name="password" id="password" required> </p>
+        <p>Re-Enter Password(*minimum 6 digits) *<input type="password" name="password" id="password" required> </p>
+        <input type="submit" value="SIGN UP">
+    </form>
+</body>
+</html>
